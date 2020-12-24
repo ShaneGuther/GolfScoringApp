@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GolfScore</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="scorecard">ScoreCard</string>
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="log_in">Log in</string>
+</resources>
