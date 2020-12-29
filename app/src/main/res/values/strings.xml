@@ -5,4 +5,7 @@
     <string name="scorecard">ScoreCard</string>
     <string name="keep_me_signed_in">Keep me signed in</string>
     <string name="log_in">Log in</string>
+    <string name="past_scores">Past Scores</string>
+    <string name="new_round_score">New Round Score</string>
+    <string name="log_out">Log out</string>
 </resources>

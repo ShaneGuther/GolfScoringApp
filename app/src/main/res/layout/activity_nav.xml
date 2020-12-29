@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_course"
+    tools:context=".NavActivity">
+
+    <Button
+        android:id="@+id/btn_NewRecord"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_custom"
+        android:text="@string/new_round_score"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/btn_AllRecords"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_custom"
+        android:text="@string/past_scores"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_custom2"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_menu"
+        app:layout_constraintEnd_toEndOf="@+id/tb_menu"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="@+id/tb_menu"
+        app:layout_constraintTop_toTopOf="@+id/tb_menu"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_menu"
+        app:layout_constraintEnd_toEndOf="@+id/tb_menu"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/tb_menu"
+        app:layout_constraintTop_toTopOf="@+id/tb_menu"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
