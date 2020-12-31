@@ -8,4 +8,7 @@
     <string name="past_scores">Past Scores</string>
     <string name="new_round_score">New Round Score</string>
     <string name="log_out">Log out</string>
+    <string name="score">Score</string>
+    <string name="par">Par</string>
+    <string name="course_name">Course name</string>
 </resources>
