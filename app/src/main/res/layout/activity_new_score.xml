@@ -81,7 +81,7 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <TextView
-        android:id="@+id/tv_par"
+        android:id="@+id/tv_parNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/par"
@@ -96,13 +96,13 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
-        android:id="@+id/tv_score"
+        android:id="@+id/tv_scoreNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/et_score"
         android:text="@string/score"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:labelFor="@id/et_score"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"

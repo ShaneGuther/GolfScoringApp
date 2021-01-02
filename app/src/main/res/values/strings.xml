@@ -11,4 +11,6 @@
     <string name="score">Score</string>
     <string name="par">Par</string>
     <string name="course_name">Course name</string>
+    <string name="course">Course Name:</string>
+    <string name="tees">Tees</string>
 </resources>
