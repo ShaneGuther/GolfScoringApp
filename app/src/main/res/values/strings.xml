@@ -13,4 +13,10 @@
     <string name="course_name">Course name</string>
     <string name="course">Course Name:</string>
     <string name="tees">Tees</string>
+    <string-array name="teeColors">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Red</item>
+    </string-array>
 </resources>
