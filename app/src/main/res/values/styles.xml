@@ -6,5 +6,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="SpinnerTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+    </style>
+    <style name="SpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/SpinnerAppearanceItem</item>
+    </style>
+    <style name="SpinnerAppearanceItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#FFF00F</item>
+    </style>
 
 </resources>

@@ -9,6 +9,7 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_new_score.*
 
 
 class NewScoreActivity : AppCompatActivity() {
@@ -33,13 +34,17 @@ class NewScoreActivity : AppCompatActivity() {
                         id: Long
                     ) {
                         if(tees[position].toString() == "Black"){
-                            spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.black))
+                            //spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.black))
+                            tv_color.setBackgroundColor(Color.BLACK)
                         }else if(tees[position].toString() == "Blue"){
-                            spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.blue))
+                            //spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.blue))
+                            tv_color.setBackgroundColor(Color.parseColor("#2172ff"))
                         }else if(tees[position].toString() == "White"){
-                            spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.white))
+                            //spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.white))
+                            tv_color.setBackgroundColor(Color.WHITE)
                         }else if(tees[position].toString() == "Red"){
-                            spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.red))
+                            //spinner.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.red))
+                            tv_color.setBackgroundColor(Color.parseColor("#F10404"))
                         }
                     }
 
