@@ -3,10 +3,7 @@ package com.example.golfscore
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_new_score.*
@@ -53,5 +50,28 @@ class NewScoreActivity : AppCompatActivity() {
                 }
 
             }
+    }
+    fun addScore(view : View){
+        if(et_CourseName.text.isNotEmpty() && et_par.text.isNotEmpty() && et_score.text.isNotEmpty()) {
+
+            //id as primary key is not properly set up yet, plan to use incremental id for each new record
+            var scorecard = Scorecard(
+                1,
+                et_CourseName.text.toString(),
+                et_par.text.toString().toInt(),
+                et_score.text.toString().toInt(),
+                spnr_tees.selectedItem.toString(),
+                et_yardage.text.toString().toInt()
+            )
+
+            val db = MyDataBase.getDatabase(this)
+            Thread {
+                if (db != null) {
+                    db.scorecardDao().insertData(scorecard)
+                }
+            }
+        }else{
+            Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_LONG).show()
+    }
     }
 }
