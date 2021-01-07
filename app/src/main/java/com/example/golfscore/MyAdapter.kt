@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.record.view.*
 
 class MyAdapter(val data : ArrayList<Scorecard>, var context: Context) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
@@ -19,10 +20,15 @@ class MyAdapter(val data : ArrayList<Scorecard>, var context: Context) : Recycle
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return data.size
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+
+        holder.itemView.tv_courseEntry.text = data[position].courseName
+        holder.itemView.tv_parEntry.text = data[position].par.toString()
+        holder.itemView.tv_scoreEntry.text = data[position].score.toString()
+        holder.itemView.tv_teeEntry.text = data[position].tees
 
     }
 

@@ -14,7 +14,14 @@ class NavActivity : AppCompatActivity() {
         tv_user.setText(user)
 
         btn_NewRecord.setOnClickListener{view ->
+
+            //line just used to delete test entries
+            //MyDataBase.getDatabase(this)?.clearAllTables()
             val intent = Intent(this, NewScoreActivity::class.java)
+            startActivity(intent)
+        }
+        btn_AllRecords.setOnClickListener{view ->
+            val intent = Intent(this, PastRecordActivity::class.java)
             startActivity(intent)
         }
     }

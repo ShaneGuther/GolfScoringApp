@@ -52,11 +52,11 @@ class NewScoreActivity : AppCompatActivity() {
             }
     }
     fun addScore(view : View){
-        if(et_CourseName.text.isNotEmpty() && et_par.text.isNotEmpty() && et_score.text.isNotEmpty()) {
+        if(et_CourseName.text.isNotEmpty() && et_par.text.isNotEmpty() && et_score.text.isNotEmpty() && et_yardage.text.isNotEmpty()) {
 
             //id as primary key is not properly set up yet, plan to use incremental id for each new record
             var scorecard = Scorecard(
-                1,
+                2,
                 et_CourseName.text.toString(),
                 et_par.text.toString().toInt(),
                 et_score.text.toString().toInt(),
@@ -69,7 +69,7 @@ class NewScoreActivity : AppCompatActivity() {
                 if (db != null) {
                     db.scorecardDao().insertData(scorecard)
                 }
-            }
+            }.start()
         }else{
             Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_LONG).show()
     }
