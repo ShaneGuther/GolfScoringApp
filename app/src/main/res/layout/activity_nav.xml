@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_image_with_alpha"
+    android:background="@drawable/darkblue_gradient"
     tools:context=".NavActivity">
 
     <Button
@@ -13,13 +13,14 @@
         android:layout_height="70dp"
         android:background="@drawable/btn_custom"
         android:text="@string/new_round_score"
+        android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <Button
         android:id="@+id/btn_AllRecords"
@@ -27,20 +28,20 @@
         android:layout_height="70dp"
         android:background="@drawable/btn_custom"
         android:text="@string/past_scores"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.402" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tb_menu"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/lightgreen"
+        android:background="@color/LightGreen"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,5 +75,33 @@
         app:layout_constraintStart_toStartOf="@+id/tb_menu"
         app:layout_constraintTop_toTopOf="@+id/tb_menu"
         app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_roundsPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rounds_played"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/handicap"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

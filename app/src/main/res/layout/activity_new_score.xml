@@ -137,7 +137,7 @@
         android:layout_height="72dp"
         android:background="@drawable/btn_custom"
         android:text="@string/submit"
-        android:textColor="@color/LightGreen"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:onClick="addScore"
         app:layout_constraintBottom_toBottomOf="parent"

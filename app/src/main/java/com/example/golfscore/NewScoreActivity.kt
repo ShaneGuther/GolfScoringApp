@@ -56,7 +56,7 @@ class NewScoreActivity : AppCompatActivity() {
 
             //id as primary key is not properly set up yet, plan to use incremental id for each new record
             var scorecard = Scorecard(
-                2,
+                3,
                 et_CourseName.text.toString(),
                 et_par.text.toString().toInt(),
                 et_score.text.toString().toInt(),
