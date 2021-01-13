@@ -29,6 +29,8 @@ class MyAdapter(val data : ArrayList<Scorecard>, var context: Context) : Recycle
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
+
+
         holder.itemView.tv_courseEntry.text = data[position].courseName
         holder.itemView.tv_parEntry.text = data[position].par.toString()
         holder.itemView.tv_scoreEntry.text = data[position].score.toString()
